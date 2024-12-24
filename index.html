@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstruktion</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="./euch.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="ctn0">
+        <div class="ctn-l">
+            <h1>Konstruktion</h1>
+            <div class="ctn-select">
+                <label for="mode">Mode: </label>
+                <select name="mode" id="mode">
+                    <option value="ellipse">Ellipse</option>
+                    <option value="hyperbel" disabled>Hyperbel</option>
+                    <option value="parabel" disabled>Parabel</option>
+                </select>
+            </div>
+            <div class="ctn-button">
+                <button id="rückwärts">&lt;&lt;</button>
+                <!-- <button id="startPause">Start</button>
+                <button id="zurücksetzen">Zurücksetzen</button> -->
+                <button id="vorwärts">&gt;&gt;</button>
+            </div>
+            
+            <p>Anweisung:</p>
+            <p id="anweisung"></p>
+        </div>
+        <div class="ctn-r">
+            <div class="board" id="board">
+                <canvas></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
