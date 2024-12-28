@@ -15,17 +15,18 @@
             <h1>Konstruktion</h1>
             <div class="ctn-select">
                 <label for="mode">Mode: </label>
-                <select name="mode" id="mode">
-                    <option value="ellipse">Ellipse</option>
-                    <option value="hyperbel" disabled>Hyperbel</option>
-                    <option value="parabel" disabled>Parabel</option>
+                <select name="mode" id="mode" onchange="zurücksetzen()">
+                    <option value=0>Ellipse</option>
+                    <option value=1>Hyperbel</option>
+                    <option value=2>Parabel</option>
                 </select>
             </div>
             <div class="ctn-button">
-                <button id="rückwärts">&lt;&lt;</button>
+                <button id="rückwärts" onclick="schrittMachen(false)">&lt;&lt;</button>
                 <!-- <button id="startPause">Start</button>
                 <button id="zurücksetzen">Zurücksetzen</button> -->
-                <button id="vorwärts">&gt;&gt;</button>
+                <button id="vorwärts" onclick="schrittMachen(true)">&gt;&gt;</button>
+                <button id="zurücksetzen" onclick="zurücksetzen()">Zurücksetzen</button>
             </div>
             
             <p>Anweisung:</p>
