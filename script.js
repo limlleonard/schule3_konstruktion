@@ -221,8 +221,9 @@ function zurücksetzen() {
     mode=document.getElementById('mode').value;
     if (mode==2) {angle=0;} else {angle=Math.PI;}
     points=[];
-    nrVorbereitung=-1 // am Anfang wird nichts in der Anweisung gezeigt
-    nrAnweisung=-1
+    nrVorbereitung=-1;
+    nrAnweisung=-1;
+    nrRunde=0;
     pAnweisung.innerText='';
     schwarz();
 }
